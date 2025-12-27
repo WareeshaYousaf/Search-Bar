@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="searchbar">
+      <div class="row">
+        <input
+          id="input_box"
+          autocomplete="off"
+          type="text"
+          placeholder="Search here...."
+          onkeyup="handleKeyUp(event)"
+        />
+        <button><img src="magnifying_glass.svg" alt="" width="20px" /></button>
+      </div>
+      <div class="suggestion_box"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
